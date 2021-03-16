@@ -1,32 +1,30 @@
 programa
 {
+	
 	funcao inicio()
-		
-		
 	{
-		inteiro tempoInfo, horas, minutos, segundos
-				
-		escreva("Digite o tempo de duração do evento em segundos: ")
-		leia(tempoInfo)
-		limpa()
-				
-		horas = tempoInfo/60
-		minutos = (tempoInfo % 60) / 60
-		segundos = (tempoInfo % 60) % 60
+		real n1, n2, n3, media
 
-		escreva("Hora[s]: ", horas)
-		escreva("\nMinuto[s]: ", minutos)
-		escreva("\nSegundo[s]: ", segundos)
-		
+		escreva("Digite a nota 1: ")
+		leia(n1)
+
+		escreva("Digite a nota 2: ")
+		leia(n2)
+
+		escreva("Digite a nota 3: ")
+		leia(n3)
+
+		media = (n1 * 0.2) + (n2 * 0.3) + (n3 * 0.5)
+
+		escreva("A média do aluno é: ", media)
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 146; 
+ * @POSICAO-CURSOR = 237; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
