@@ -13,7 +13,10 @@ programa
 		escreva("Digite um numero inteiro: ")
 		leia(n)
 
-		se(n%2 == 0){
+		se(n == 0){
+			escreva("O numero ", n," é NEUTRO,.")
+		}
+		senao se(n%2 == 0){
 			escreva("O numero ", n," é PAR")
 			se(n > 0){
 				escreva(" e POSITIVO.")
@@ -38,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 439; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
