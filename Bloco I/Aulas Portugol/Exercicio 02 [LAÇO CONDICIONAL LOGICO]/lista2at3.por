@@ -26,15 +26,15 @@ programa
 		escreva("Informe o numero 4: ")
 		leia(n4)
 
-		se((n3*4) >= 1000){
+		se((n3*n3) >= 1000){
 			escreva("O valor do numero 3 é: ", n3)
 			escreva("\nE seu valor quadrado é: ", n3*4)
 		}
 		senao {
-			escreva("Valor 1: ", n1, " seu quadrado é ", n1*4)
-			escreva("\nValor 2: ", n2, " seu quadrado é ", n2*4)
-			escreva("\nValor 3: ", n3, " seu quadrado é ", n3*4)
-			escreva("\nValor 4: ", n4, " seu quadrado é ", n4*4)
+			escreva("Valor 1: ", n1, " seu quadrado é ", n1*n1)
+			escreva("\nValor 2: ", n2, " seu quadrado é ", n2*n2)
+			escreva("\nValor 3: ", n3, " seu quadrado é ", n3*n3)
+			escreva("\nValor 4: ", n4, " seu quadrado é ", n4*n4)
 		}
 	}
 }
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 814; 
+ * @POSICAO-CURSOR = 854; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
