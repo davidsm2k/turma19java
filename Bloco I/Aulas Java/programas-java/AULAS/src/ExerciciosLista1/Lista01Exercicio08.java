@@ -9,7 +9,7 @@ package ExerciciosLista1;
 
 import java.util.Scanner;
 
-public class Exercicio08 {
+public class Lista01Exercicio08 {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		
