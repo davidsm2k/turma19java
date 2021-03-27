@@ -25,7 +25,6 @@ programa
 		senao {
 			escreva("[OPERAÇÃO INVÁLIDO] - Um dos valores ou todos não são positivos.")
 		}
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -33,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 276; 
+ * @POSICAO-CURSOR = 340; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {l1, 11, 10, 2}-{l2, 11, 14, 2}-{l3, 11, 18, 2};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

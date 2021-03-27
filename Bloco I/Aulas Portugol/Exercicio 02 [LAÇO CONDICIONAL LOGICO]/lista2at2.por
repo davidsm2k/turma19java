@@ -20,7 +20,7 @@ programa
 		escreva("Digite o código do funcionario: ")
 		leia(c)
 
-		escreva("Digite o quantidade de horas trabalhadas: ")
+		escreva("Digite a quantidade de horas trabalhadas: ")
 		leia(n)
 
 		se(n < 50.0){
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 909; 
+ * @POSICAO-CURSOR = 692; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
