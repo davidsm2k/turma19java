@@ -23,9 +23,11 @@ public class Exercicio01 {
 
 		System.out.println("Digite quantos dias você tem: ");
 		dias = leia.nextInt();
+		
+		System.out.printf("Você tem %d dias de vida ", calculo(anos, meses, dias));
 	}
 	
-	public int calculo(int anos, int meses, int dias) {
+	public static int calculo(int anos, int meses, int dias) {
 		int totalAnos, totalMeses, resultado; 
 		
 		final int QUANT_ANOS = 365;

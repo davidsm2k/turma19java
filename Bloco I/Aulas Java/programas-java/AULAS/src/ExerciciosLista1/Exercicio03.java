@@ -21,6 +21,6 @@ public class Exercicio03 {
 		minutos = (tempoDuracao % 3600) / 60;
 		segundos = (tempoDuracao % 3600) % 60;
 		
-		System.out.printf("Hora[s]: %.0f\\nMinuto[s]: %.0f\\nSegundo[s]: %.0f", horas, minutos, segundos);
+		System.out.printf("Hora[s]: %.0f\nMinuto[s]: %.0f\nSegundo[s]: %.0f", horas, minutos, segundos);
 	}
 }
