@@ -1,54 +1,67 @@
 package view;
 
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
-public class Menu {
-	
-	public final static String NOME_BANCO = "GERAÇÃO";
-	public final static String SLOGAN = "UM BANCO PARA TODES";
-	
+import model.Conta;
+
+public class Menu extends Conta {
+
 	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+
 		int opcoes;
 		do {
 			try {
-			opcoes = Integer.parseInt(JOptionPane.showInputDialog(null, descricaoMenu(), "MENU BANCO GERAÇÃO" , JOptionPane.INFORMATION_MESSAGE));
-			}catch(Exception e) {
+				System.out.println(descricaoMenu());
+				opcoes = leia.nextInt();
+			} catch (Exception e) {
 				opcoes = 0;
 			}
-			switch(opcoes) {
-				case 1:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 1", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				case 2:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 2", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				case 3:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 3", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				case 4:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 4", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				case 5:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 5", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				case 6:
-					JOptionPane.showMessageDialog(null,"Escolheu a opção 6", "Acesso Autorizado", JOptionPane.ERROR_MESSAGE);
-					break;
-				default:
-					JOptionPane.showMessageDialog(null,"Você não escolheu uma opção entre 1 e 6.", "Acesso Negado", JOptionPane.ERROR_MESSAGE);
+			switch (opcoes) {
+			case 1:
+				System.out.println("Escolheu a opção 1");
+				break;
+			case 2:
+				System.out.println("Escolheu a opção 2");
+				break;
+			case 3:
+				System.out.println("Escolheu a opção 3");
+				break;
+			case 4:
+				System.out.println("Escolheu a opção 4");
+				break;
+			case 5:
+				ContaEstudantil.ContaEstudantil();
+				opcoes = 6;
+				break;
+			case 6:
+				System.out.println("Escolheu a opção 6");
+				break;
+			default:
+				System.out.println("\nVocê não escolheu uma opção entre 1 e 6.\n");
+				// Delay ********************************
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				// Final Delay **************************
 			}
-		}while(opcoes < 1 || opcoes > 6);
+		} while (opcoes < 1 || opcoes > 6);
 	}
-	
+
 	private static String descricaoMenu() {
-		String texto = "Bem vinde ao Banco " + NOME_BANCO + "\n"
-						+ SLOGAN + "\n"
+		String texto = "Bem vinde ao Banco " 
+						+ NOME_BANCO + "\n" 
+						+ SLOGAN + "\n" 
 						+ "\n1 - CONTA POUPANÇA"
-						+ "\n2 - CONTA CORRENTE"
-						+ "\n3 - CONTA ESPECIAL"
-						+ "\n4 - CONTA EMPRESA"
+						+ "\n2 - CONTA CORRENTE" 
+						+ "\n3 - CONTA ESPECIAL" 
+						+ "\n4 - CONTA EMPRESA" 
 						+ "\n5 - CONTA ESTUDANTIL"
-						+ "\n6 - SAIR"
+						+ "\n6 - SAIR" 
 						+ "\n\nDigite o código da opção selecionada: ";
 		return texto;
 	}
