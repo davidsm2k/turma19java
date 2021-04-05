@@ -1,4 +1,4 @@
-package Exemplo;
+package ATIVIDADES_AULA;
 
 import javax.swing.JOptionPane;
 
