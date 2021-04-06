@@ -43,9 +43,9 @@ public class Lista03Exercicio01 {
 			calcFilhos += filhos;
 		}
 		
-		System.out.println("Media de Salarios: " + calcSalario/HABITANTES);
-		System.out.println("Media de Filhos: "+ calcFilhos/HABITANTES);
-		System.out.println("O salario maior é: "+ salarioMaior);
+		System.out.printf("\nMedia de Salarios: %.2f", calcSalario/HABITANTES);
+		System.out.printf("\nMedia de Filhos: %.2f", calcFilhos/HABITANTES);
+		System.out.printf("\nO salario maior %.2f é: ", salarioMaior);
 		System.out.printf("\nPessoas com salário até R$100,00: %.1f %% dos habitantes.", ((percentualSalario/HABITANTES) * 100));
 	}
 }
