@@ -15,10 +15,10 @@ public class Lista03Exercicio01 {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		
-		final int HABITANTES = 2;
+		final int HABITANTES = 3;
 		
-		double media, salario, calcSalario = 0.0, salarioAnt = 0.0, salarioMaior = 0.0, percentualSalario = 0.0;
-		int filhos, calcFilhos = 0;
+		double salario, calcSalario = 0.0, salarioAnt = 0.0, salarioMaior = 0.0, percentualSalario = 0.0;
+		byte filhos, calcFilhos = 0;
 		
 		for(int i = 1; i <= HABITANTES; i++) {// Pegando as Informações
 			System.out.println("Digite o salario do " + i + "° habitante: ");
@@ -39,13 +39,13 @@ public class Lista03Exercicio01 {
 			//***********************************************
 			
 			System.out.println("Digite quantos filhos o "+ i +"º habitante tem: ");
-			filhos = leia.nextInt();
+			filhos = leia.nextByte();
 			calcFilhos += filhos;
 		}
 		
 		System.out.println("Media de Salarios: " + calcSalario/HABITANTES);
 		System.out.println("Media de Filhos: "+ calcFilhos/HABITANTES);
 		System.out.println("O salario maior é: "+ salarioMaior);
-		System.out.println("\nPessoas com salário até R$100,00: "+ ((percentualSalario/HABITANTES) * 100) +" % dos habitantes.\n");
+		System.out.printf("\nPessoas com salário até R$100,00: %.1f %% dos habitantes.", ((percentualSalario/HABITANTES) * 100));
 	}
 }
