@@ -56,13 +56,11 @@ public class Conta {
 	public Conta() {
 	}
 
-	public double debito(double valor) {
+	public void debito(double valor) {
 		this.saldo -= valor;
-		return this.saldo;
 	}
 
-	public double credito(double valor) {
+	public void credito(double valor) {
 		this.saldo += valor;
-		return this.saldo;
 	}
 }
