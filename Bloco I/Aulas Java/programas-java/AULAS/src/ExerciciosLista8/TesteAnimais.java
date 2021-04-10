@@ -3,7 +3,7 @@ package ExerciciosLista8;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Teste {
+public class TesteAnimais {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
