@@ -133,7 +133,7 @@ public class CadVendas {
 	}
 	public static void MostrarHistorico() {
 		
-		System.out.println("\n***NOTA FICAL*****\n");
+		System.out.println("\n***NOTA FISCAL*****\n");
 		System.out.println("Nome da Loja: " + loja1.getNome());
 		System.out.println("CNPJ: " + loja1.getCnpj());
 		System.out.println();
