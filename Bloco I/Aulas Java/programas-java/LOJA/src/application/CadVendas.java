@@ -63,8 +63,8 @@ public class CadVendas {
 					opcao1 = leia.next().charAt(0);
 
 					if (opcao1 == '1') {
-						historico.add(prod);
 						prod.tirarEstoque(quant);
+						if((prod.getQtdeEstoque() - quant) >= 0) historico.add(prod);
 						break;
 					}
 				}
