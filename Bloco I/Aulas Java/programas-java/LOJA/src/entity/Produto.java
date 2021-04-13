@@ -44,10 +44,11 @@ public class Produto extends Loja{
 	}
 	
 	public void tirarEstoque(int valorSerExcluido) {
-		if(this.qtdeEstoque >= valorSerExcluido) {
+		if(valorSerExcluido <= 0) System.out.println("PEDIDO INVALIDO !\nCOMPRA NÃO REALIZADA");
+		else if(this.qtdeEstoque >= valorSerExcluido) {
 			this.qtdeEstoque -= valorSerExcluido;
 		}else {
-			System.out.println("PEDIDO MAIOR QUE O DISPONIVEL EM ESTOQUE\nCOMPRA NÃO REALIZADA");
+			System.out.println("PEDIDO INVALIDO !\nCOMPRA NÃO REALIZADA");
 		}
 	}	
 }
