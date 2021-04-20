@@ -59,7 +59,7 @@ public class CadVendas {
 					System.out.println("Produto Escolhido: \n Descrição - " + prod.getDescricao() + "\n Código: "
 							+ prod.getCodigo());
 					System.out.println(" Valor unitario: " + prod.getValorUnitario());
-					System.out.println(" Quantidade em estoque: " + prod.getQtdeEstoque() + " unidades");
+					System.out.println(" Quantidade em estoque: " + prod.getQtdeEstoque() + " unidade(s)");
 					System.out.println("Quantos deseja comprar: ");
 					int quant = leia.nextInt();
 					

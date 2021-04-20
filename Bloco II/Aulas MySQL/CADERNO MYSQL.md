@@ -1,0 +1,54 @@
+##### COMANDOS:
+
+###### Criar banco de dados: 
+
+- **create database** *nome_do_bd*
+
+###### Usar bando de dados:
+
+- **use** *nome_do_bd*
+
+###### Criando tabela
+
+- **create table** *nome_da_tb*(
+
+  ​	id				**bigint *AUTO_INCREMENT***,
+
+  ​	nome 		**varchar(*255*) *not null***,
+
+  ​	preco		**float *not null***,
+
+  ​	**primary key**(***id***)
+
+  );
+
+###### Inserir uma informação na tabela
+
+- **insert into** *nome_da_tb* (nome, preco) **values** ("mamao", 2.50);
+
+
+
+###### Buscar uma info na tabela
+
+- **select** * **from** *nome_da_tb*;
+
+
+
+###### Alterar info tabela
+
+- alter table *nome_da_tb* add descricao varchar(255); -- adicionando coluna
+- alter table *nome_da_tb* drop descricao; -- excluindo coluna
+
+
+
+###### Deletando informacoes
+
+- delete from *nome_da_tb* where id=2; -- deletando dado inserido no banco de dados
+
+  
+
+###### Atualizando dados da tabela
+
+- update *nome_da_tb* set preco = 10 where id = numero_do_id;
+- update *nome_da_tb* set nome = "uva" where id = numero_do_id;
+
