@@ -1,0 +1,14 @@
+package application;
+
+import java.util.Locale;
+
+import entity.Produto;
+
+public class Teste {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Produto prod1 = new Produto("CAMISA", "XL001", 100.25);
+		
+		
+	}
+}

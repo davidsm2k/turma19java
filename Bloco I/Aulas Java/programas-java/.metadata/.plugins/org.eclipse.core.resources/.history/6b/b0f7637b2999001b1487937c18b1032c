@@ -1,0 +1,11 @@
+package entity;
+
+public class Funcionario {
+	private String matricula;
+	private String nome;
+	private int horasTrabalhadas;
+	private double valorHora;
+	
+	
+	
+}

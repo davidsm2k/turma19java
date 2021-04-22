@@ -1,0 +1,14 @@
+package entity;
+
+public class Medio extends Estudante{
+	private int contadorBoletim;
+	
+	public Medio(int matricula, String cpf) {
+		super(matricula, cpf);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}

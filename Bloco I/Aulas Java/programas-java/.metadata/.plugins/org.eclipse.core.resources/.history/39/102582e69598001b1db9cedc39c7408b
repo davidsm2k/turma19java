@@ -1,0 +1,13 @@
+package entity;
+
+public class Estudante {
+	//atributos
+	
+	
+	//construtores
+	
+	//encapsulamento - getteis and setters
+	
+	//metodos
+	
+}

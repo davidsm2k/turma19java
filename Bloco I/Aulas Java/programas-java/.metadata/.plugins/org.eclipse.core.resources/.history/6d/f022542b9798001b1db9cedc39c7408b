@@ -1,0 +1,11 @@
+package application;
+
+public class Basico extends Estudante{
+	public static void main(String[] args) {
+		int diaAniversario;
+	}
+	
+	private void BonusAniversario() {
+		
+	}
+}

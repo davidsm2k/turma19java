@@ -1,0 +1,25 @@
+package entity;
+
+public class Estudante {
+	//atributos
+	private int matricula;
+	private String cpf;
+	private double pontos;
+	private boolean status;
+	
+	//construtores
+	public Estudante(int matricula, String cpf) {
+		super();
+		this.matricula = matricula;
+		this.cpf = cpf;
+	}
+	
+	
+	
+	
+	//encapsulamento - getteis and setters
+	
+	
+	//metodos
+	
+}

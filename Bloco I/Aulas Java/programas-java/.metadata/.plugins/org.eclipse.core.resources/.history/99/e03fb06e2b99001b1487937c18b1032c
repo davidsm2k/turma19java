@@ -1,0 +1,9 @@
+package application;
+
+import entity.Funcionario;
+
+public class Teste {
+	public static void main(String[] args) {
+		Funcionario funcionario1 = new Funcionario("1234", "José");
+	}
+}

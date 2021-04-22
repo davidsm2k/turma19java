@@ -1,0 +1,28 @@
+package entity;
+
+public class Loja extends Produto{
+	//atributos
+	private String nome;
+	private String cnpj;
+	
+	//construtor
+	
+	public Loja(String descricao, String codigo, double valorUnitario, String nome, String cnpj) {
+		super(descricao, codigo, valorUnitario);
+		this.nome = nome;
+		this.cnpj = cnpj;
+	}
+
+	//encapsulamento
+	public String getNome() {
+		return nome;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+	
+	//metodos
+	
+	
+}

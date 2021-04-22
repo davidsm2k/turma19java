@@ -1,0 +1,18 @@
+package entity;
+
+public class NotaFiscal extends Produto{
+	private String formaPagamento;
+
+	public NotaFiscal(String nome, String cnpj, String descricao, String codigo, double valorUnitario, int qtdeEstoque,
+			String formaPagamento) {
+		super(nome, cnpj, descricao, codigo, valorUnitario, qtdeEstoque);
+		this.formaPagamento = formaPagamento;
+	}
+
+	public String getFormaPagamento() {
+		return formaPagamento;
+	}
+	
+	
+	
+}

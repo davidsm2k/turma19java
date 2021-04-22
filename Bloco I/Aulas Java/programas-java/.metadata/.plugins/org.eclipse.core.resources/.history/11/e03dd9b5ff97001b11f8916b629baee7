@@ -1,0 +1,7 @@
+package ExerciciosLista7;
+
+public class TesteAviao {
+	public static void main(String[] args) {
+		
+	}
+}

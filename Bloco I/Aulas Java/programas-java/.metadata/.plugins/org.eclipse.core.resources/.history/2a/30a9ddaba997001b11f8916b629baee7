@@ -1,0 +1,7 @@
+package CADASTRO_CLIENTE_LOJA;
+
+public class Pessoa {
+	public String nome;
+	public int anoNascimento;
+	public char genero;
+}

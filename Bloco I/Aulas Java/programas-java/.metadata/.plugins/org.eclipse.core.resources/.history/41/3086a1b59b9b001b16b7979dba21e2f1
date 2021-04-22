@@ -1,0 +1,6 @@
+package entity;
+
+public class NotaFiscal extends Bolsa{
+	private int quantComprada;
+	
+}

@@ -1,0 +1,9 @@
+package ExerciciosLista7;
+
+import java.util.Locale;
+
+public class TesteProdutoEletronico {
+	public static void main(String[] args) {
+		Locale.setDefault(newLocale);
+	}
+}

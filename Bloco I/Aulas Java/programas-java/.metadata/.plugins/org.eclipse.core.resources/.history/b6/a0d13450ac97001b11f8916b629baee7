@@ -1,0 +1,28 @@
+package CADASTRO_CLIENTE_LOJA;
+
+public class Pessoa {
+	
+	private final int ANO_ATUAL = 2021;
+	
+	public String nome;
+	public int anoNascimento;
+	public char genero;
+	
+	public int calcularIdade() {
+		return ANO_ATUAL - anoNascimento;
+	}
+	
+	public String tratamento() {
+		//1 - feminino / 2- masculino / 3 - outros
+		String saida;
+		if(genero == '1') {
+			saida = "Sra";
+		}else if(genero == '2') {
+			saida = "Sr";
+		}else if(genero == '3') {
+			saida = "Sre";
+		}
+		return saida;
+	}
+	
+}

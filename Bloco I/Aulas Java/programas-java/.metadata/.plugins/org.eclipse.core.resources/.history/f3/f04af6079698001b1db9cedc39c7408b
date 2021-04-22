@@ -1,0 +1,17 @@
+package entity;
+
+public class Estudante {
+	//atributos
+	private int matricula;
+	private String cpf;
+	
+	
+	//construtores
+	
+	
+	//encapsulamento - getteis and setters
+	
+	
+	//metodos
+	
+}

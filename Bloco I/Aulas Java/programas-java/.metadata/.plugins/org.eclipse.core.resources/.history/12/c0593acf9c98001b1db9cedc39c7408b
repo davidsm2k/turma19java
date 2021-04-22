@@ -1,0 +1,17 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class CadEstudante {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
+		
+		//menu
+		System.out.println("ESCOLA ED+");
+		System.out.println("AQUI OU VAI OU VAI MESMO !!!");
+		System.out.println();
+		System.out.println("\n1 - BÁSICO\n2 - MÉDIO\n3 - GRADUAÇÃO\n4 - PÓS\n5 - MESTRADO\n6 - SAIR");
+	}
+}

@@ -1,0 +1,88 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entity.Bolsa;
+import entity.Loja;
+import entity.Produto;
+
+public class CadVendas {
+	static List<Bolsa> estoque = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		
+		List<String> historico = new ArrayList<>();
+		
+		Scanner leia = new Scanner(System.in);
+		char opcao1 = 0;
+		char opcao2 = 0;
+		int achou = 0;
+		
+		Loja loja1 = new Loja("GERAÇÃO DE BOLSAS", "12345678911/0001");
+		//Itens do Estoque******************************
+		estoque.add(new Bolsa(loja1.getNome(), loja1.getCnpj(), "BOLSA DE ALÇA", "BA144", 150.0, 3, "GUCCI" ));
+		estoque.add(new Bolsa(loja1.getNome(), loja1.getCnpj(), "MOCHILA DE ESPORTE", "ME342", 50.0, 4, "NIKE"));
+		estoque.add(new Bolsa(loja1.getNome(), loja1.getCnpj(), "ESCOLAR", "E0342", 30.0, 2, "ADIDAS"));
+		estoque.add(new Bolsa(loja1.getNome(), loja1.getCnpj(), "ACAMPAMENTO", "A0978", 200.0, 1, "ADIDAS"));
+		//**********************************************
+		
+		System.out.printf("LOJA %s \n", loja1.getNome());
+		System.out.println("\n**LISTA DE PRODUTOS**\n");
+		MostrarEstoque();
+		
+		do {			
+			System.out.println("Digite o código do que ira comprar: ");
+			String codigo = leia.next();
+			for (Produto prod : estoque) {
+				
+				//Verificando escolha *********
+				for(String item : historico) {
+					if(codigo.equals(item)) {
+						achou++;
+					}
+				}
+				// Verificando escolha *********
+				
+				if(achou > 0) {
+					System.out.println("Produto Escolhido");
+				}
+				else if(codigo.equals(prod.getCodigo())) {
+					System.out.println("Produto Escolhido: \nDescrição - " + prod.getDescricao() + "\nCódigo: " + prod.getCodigo());
+					System.out.println("Digite 1-Confirmar ou 2-Cancelar: ");
+					opcao1 = leia.next().charAt(0);
+					
+					if(opcao1 == '1') {
+						prod.tirarEstoque(1);
+					}
+				}
+			}			
+			
+			historico.add(codigo);
+			
+			//********
+			
+			//********
+			
+			System.out.println("Deseja encerrar a compra ? 1-Sim ou 2-Não");
+			opcao2 = leia.next().charAt(0);
+			
+			if(opcao2 == '2') {
+				System.out.println("**PRODUTOS DISPONIVEIS**");
+				MostrarEstoque();
+			}			
+		}while(opcao2 != '1');		
+	}
+	
+	public static void MostrarEstoque() {
+		for (Bolsa prod : estoque) {
+			System.out.println("Quantidade: " + prod.getQtdeEstoque());
+			System.out.println(" Marca: " + prod.getMarca());
+			System.out.println(" Descrição: " + prod.getDescricao()); 
+			System.out.println(" Valor: R$ " + prod.getValorUnitario());
+			System.out.println(" Código: " + prod.getCodigo());
+			System.out.println();
+		}
+	}
+}

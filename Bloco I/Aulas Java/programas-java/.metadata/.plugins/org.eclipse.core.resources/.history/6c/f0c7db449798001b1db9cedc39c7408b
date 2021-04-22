@@ -1,0 +1,15 @@
+package application;
+
+import entity.Estudante;
+
+public class Basico extends Estudante{
+	private int diaAniversario;
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private void BonusAniversario() {
+		
+	}
+}

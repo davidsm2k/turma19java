@@ -1,0 +1,11 @@
+package entity;
+
+public class NotaFiscal extends Produto{
+	private char formaPagamento;
+
+
+	public void pagamento(){
+		
+	}
+	
+}

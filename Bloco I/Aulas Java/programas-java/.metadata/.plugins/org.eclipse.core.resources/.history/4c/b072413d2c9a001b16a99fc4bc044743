@@ -1,0 +1,8 @@
+package entity;
+
+public class Loja extends Produto{
+	private String nome;
+	private String cnpj;
+	
+	
+}

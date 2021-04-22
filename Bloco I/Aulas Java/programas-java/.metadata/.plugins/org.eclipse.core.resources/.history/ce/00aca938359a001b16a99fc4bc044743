@@ -1,0 +1,11 @@
+package application;
+
+import entity.Bolsa;
+import entity.Loja;
+
+public class TesteDev {
+	public static void main(String[] args) {
+		Loja loja1 = new Loja("GERAÇÃO DE BOLSAS", "12345678911/0001");
+		Bolsa bolsa1 = new Bolsa(loja1.getNome(), loja1.getCnpj(), "BOLSA DE ALÇA" );
+	}
+}

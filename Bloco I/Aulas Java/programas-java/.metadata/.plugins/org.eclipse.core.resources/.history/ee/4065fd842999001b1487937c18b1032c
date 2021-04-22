@@ -1,0 +1,20 @@
+package entity;
+
+public class Funcionario {
+	//atributos
+	private String matricula;
+	private String nome;
+	private int horasTrabalhadas;
+	private double valorHora;
+	
+	//construtor
+	public Funcionario(String matricula, String nome) {
+		super();
+		this.matricula = matricula;
+		this.nome = nome;
+	}
+	
+	
+	
+	
+}

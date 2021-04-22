@@ -1,0 +1,21 @@
+package entity;
+
+public class Produto {
+	
+	//atributos
+	private String descricao;
+	private String codigo;
+	private double valorUnitario;
+	private int qtdeEstoque;
+	
+	//construtores
+	
+
+	//encapsulamento - gettes and setters
+	
+	
+	//metodos
+	
+	
+	
+}

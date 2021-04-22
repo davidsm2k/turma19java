@@ -1,0 +1,26 @@
+package entity;
+
+public class Produto {
+	
+	//atributos
+	private String descricao;
+	private String codigo;
+	private double valorUnitario;
+	private int qtdeEstoque;
+		
+	//construtores
+	public Produto(String descricao, String codigo, double valorUnitario) {
+		super();
+		this.descricao = descricao;
+		this.codigo = codigo;
+		this.valorUnitario = valorUnitario;
+	}
+
+	//encapsulamento - gettes and setters
+	
+	
+	//metodos
+	
+	
+	
+}

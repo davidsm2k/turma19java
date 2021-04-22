@@ -1,0 +1,17 @@
+package ExerciciosLista8;
+
+public class Preguica extends Animal{
+
+	public Preguica(String nome, int idade) {
+		super(nome, idade);
+	}
+	
+	public void subirArvore(char subir) {
+		if(subir == '1') {
+			System.out.println("O subir está correndo");
+		}
+		else if (subir == '2') {
+			System.out.println("O subir não está correndo");
+		}
+	}
+}

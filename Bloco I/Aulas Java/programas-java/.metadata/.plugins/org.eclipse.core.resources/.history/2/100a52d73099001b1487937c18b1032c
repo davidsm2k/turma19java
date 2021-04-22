@@ -1,0 +1,20 @@
+package application;
+
+import entity.Funcionario;
+import entity.Terceiro;
+
+public class Teste {
+	public static void main(String[] args) {
+		Funcionario funcionario1 = new Funcionario("1234", "José");
+		Funcionario funcionario2 = new Funcionario("5678", "Maria", 48, 30);
+		Terceiro terceiro1 = new Terceiro("9031", "Pedro", 50);
+		Terceiro terceiro2 = new Terceiro("2587", "Ed", 72, 40, 50);
+		
+		System.out.printf("Funcionario 1 \n Matricula: %s \n Nome: %s \n\n", funcionario1.getMatricula(), funcionario1.getNome());
+		System.out.printf("Funcionario 2 \n Matricula: %s \n Nome: %s\n Hora Trabalhada: %d\n Salario por hora: R$ ", funcionario2.getMatricula(), funcionario2.getNome(), funcionario2.getHorasTrabalhadas(), funcionario2.getValorHora());
+		
+		System.out.printf("Terceiro 1 \n Matricula: %s \n Nome: %s \n\n", terceiro1.getMatricula(), terceiro1.getNome());
+		System.out.printf("Terceiro 2 \n Matricula: %s \n Nome: %s\n Hora Trabalhada: %d\n Salario por hora: R$ ", terceiro2.getMatricula(), terceiro2.getNome(), terceiro2.getHorasTrabalhadas(), terceiro2.getValorHora());
+
+	}
+}

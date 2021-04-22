@@ -1,0 +1,73 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entity.Bolsa;
+import entity.Loja;
+import entity.Mochila;
+import entity.Produto;
+
+public class CadVendas {
+	public static void main(String[] args) {
+		List<Produto> estoque = new ArrayList<>();
+		List<String> historico = new ArrayList<>();
+		
+		Scanner leia = new Scanner(System.in);
+		char opcao1 = 0;
+		char opcao2 = 0;
+		boolean achou = false;
+		
+		Loja loja1 = new Loja("GERAÇÃO DE BOLSAS", "12345678911/0001");
+		estoque.add(new Bolsa(loja1.getNome(), loja1.getCnpj(), "BOLSA DE ALÇA", "B0144", 150.0, 5, "GUCCI" ));
+		estoque.add(new Mochila(loja1.getNome(), loja1.getCnpj(), "MOCHILA DE ESPORTE", "E0342", 50.0, 5, "NIKE"));
+		
+		System.out.printf("LOJA %s \n", loja1.getNome());
+		System.out.println("**LISTA DE PRODUTOS**");
+		for (Produto prod : estoque) {
+			System.out.println("Quantidade: " + prod.getQtdeEstoque());
+			System.out.println(" Descrição: " + prod.getDescricao() + " / Código: " + prod.getCodigo() + " / Valor: R$ " + prod.getValorUnitario());
+		}
+		do {			
+			System.out.println("Digite o código do que ira comprar: ");
+			String codigo = leia.next();
+			for (Produto prod : estoque) {
+				
+				//Verificando escolha *********
+				for(String item : historico) {
+					if(codigo == item) {
+						System.out.println("Produto escolhido");
+						achou = true;
+					}
+				}
+				// Verificando escolha *********
+				if(codigo.equals(prod.getCodigo())) {
+					System.out.println("Produto Escolhido: \nDescrição - " + prod.getDescricao() + "\nCódigo: " + prod.getCodigo());
+					System.out.println("Digite 1-Confirmar ou 2-Cancelar: ");
+					opcao1 = leia.next().charAt(0);
+					
+					if(opcao1 == '1') {
+						prod.tirarEstoque(1);
+					}
+				}
+			}			
+			
+			historico.add(codigo);
+			
+			System.out.println("Deseja encerrar a compra ? 1-Sim ou 2-Não");
+			opcao2 = leia.next().charAt(0);
+			
+		}while(opcao2 != '1');	
+		
+		
+		for (Produto prod : estoque) {
+			System.out.println("Quantidade: " + prod.getQtdeEstoque());
+			System.out.println(" Descrição: " + prod.getDescricao() + " / Código: " + prod.getCodigo() + " / Valor: R$ " + prod.getValorUnitario());
+		}
+	}
+}
+
+/*
+// 
+*/
