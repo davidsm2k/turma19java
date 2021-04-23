@@ -31,8 +31,53 @@
 ###### Buscar uma info na tabela
 
 - **select** * **from** *nome_da_tb*;
+- **select** * **from** *nome_da_tb* **where** id = 2;
+- **select** * **from** *nome_da_tb* **where** preco > 2;
 
+Todos os dados com letras BA:
 
+- **select** * **from** *nome_da_tb* **where** nome **Like** "%Ba%";
+
+Todos os dados com primeira letra C:
+
+- **select** * **from** *nome_da_tb* **where** nome **Like** "C%";
+
+Todos os dados com preços de 30, 20 e 40 reias:
+
+- **select** * **from** *nome_da_tb* **where** preco **in** (30, 20, 40) ;
+
+Todos os dados com preços entre 20 e 40 reias:
+
+- **select** * **from** *nome_da_tb* **where** preco **beetween** 20 **and** 40;
+
+Media ponderada
+
+- **select** **AVG** (preco) **as** media **from** *nome_da_tb*;
+
+Mostra quantos dados existem na tabela
+
+- **select** **COUNT** (*)**from** *nome_da_tb*;
+
+Soma os dados que foram solicitados para soma
+
+- **select SUM**(*preco*) **FROM** *nome_da_tb* **WHERE** nome = *"Picanha"*;
+- **SELECT SUM**(*preco*) **FROM** *tb_produtos* **WHERE** nome **LIKE** *"%Picanha%"*;
+
+MOSTRA TUDO QUE ESTA RELACIONADO ENTRE AS TABELAS 
+
+- **select** * **from** *nome_da_tb* 
+
+  ​		**inner join** *nome_da_tb_estrangeira* 
+
+  ​				**on** *nome_da_tb_estrangeira*.id = td_produtos.categoria_id;
+
+MOSTRA TUDO QUE ESTA RELACIONADO ENTRE AS TABELAS E A TABELA TODA DA DIREITA
+
+- **left join**
+
+MOSTRA TUDO QUE ESTA RELACIONADO ENTRE AS TABELAS E A TABELA TODA DA ESQUERDA
+
+- **right join**
 
 ###### Alterar info tabela
 
