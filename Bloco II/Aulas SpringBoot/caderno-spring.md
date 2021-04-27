@@ -1,8 +1,6 @@
 <h1><center>Spring Initializr</center></h1>
 
-
-
-### CRIAR PRIMEIRO PROJETO *"HELLO WORD"*
+<h3><center>Criando Projeto no spring.io</center></h3>
 
 **Project:** Maven Project
 
@@ -15,7 +13,81 @@
 #### Dependencies:
 
 - **Spring Boot DevTools** (Atualiza automaticamente a aplicação a cada alteração feita)
-- **Spring Web** (Todas as funcionalidades de uma API REST WEB, ex.: protocoloca Http entre outros)
+- **Spring Web** (Todas as funcionalidades de uma API REST WEB, ex.: protocolo Http entre outros)
+- **MySQL Driver** (Utilizado para fazer a conexão do projeto com o banco de dados MySQL)
+- **Spring Data JPA **(Permite fazer manipulações no banco de dados, CRUD)
+- **Validation** (Serve para trabalhar com validação no banco de dados)
 
 ###### Clique em *GENERATE* para criar o projeto.
+
+
+
+<h4><center>CAMADAS:</center></h4>
+
+**Repository** *->* Comunica com banco de dados
+
+**Model** *->* Modelos 
+
+**Controller** *->* 
+
+**Service** *->*
+
+
+
+<h3><center>@Anotations</center></h3>
+
+#### Model:
+
+- **@Entity** (Informar que é uma entidade)
+
+- **@Table*(name = <nome-da-tababela>)*** (Define nome da tabela que sera criada no BANCO)
+
+- **@Id** (Informa que  variavel é um ID no banco)
+  - **@GeneratedValue*(strategy = GenerationType.IDENTITY)*** (Transforma o Id em Chave Primaria)
+- **@NotNull** (Não pode ficar vazio)
+- **@Size*(min = 5, max = 100)*** (Define o minino e o maximo de caracteres)
+- **@Temporal(TemporalType.TIMESTAMP)** (Informa que é um tempo e o tipo de tempo)
+
+
+
+#### Repository:
+
+- **@Repository**(Informar que é um Repositorio)
+
+- **extends** *JpaRepository* <Nome da Classe, Long(Tipo primitivo do id)>	
+
+  ```
+  // Pega tudos que contem a palavra titulo ignorando letras maiusculas
+  public List<Postagem> findAllByTituloContainingIgnoreCase (String titulo); 
+  ```
+
+
+
+#### Controller:
+
+- **@RestController** (Informar que é um controller)
+- **@RequestMapping*("uri")*** (Informar por qual uri essa classe será acessada)
+- **@CrossOrigin("*")** (Para a classe aceitar requisições de qualquer origem. Ex.: Angular, REACT e etc)
+- **@Autowired** (Serve para instanciar interfaces / ajuda a fazer o acesso a uma inteface)
+
+- **@GetMapping** (Acionado quando a requisição é somente a da classe)
+- **@GetMapping*("/{id}")*** (Get que recebe uma variavel no caminho como parametro)
+  - **@PathVariable** (Pega a viriavel do caminho da *URI* do GetMapping)
+- **.map() / .orElse()** (Serve para dar uma condição igual ***if*** e ***else***)
+
+
+
+
+
+# AJUDA EXTRA
+
+
+
+#### application.properties
+
+- *spring.jpa.hibernate.ddl-auto=update
+  spring.datasource.url=jdbc:mysql://localhost/blog_pessoal?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSl=false
+  spring.datasource.username=root
+  spring.datasource.password=senhadobanco
+  spring.jpa.show-sql=true*
 

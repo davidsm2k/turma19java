@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\david\Desktop\Generation Brasil\Repositorios Generation\turma19java\Bloco II\Aulas SpringBoot\Listas de Exercicios SpringBoot\Lista01\objetivos-aprendizagem"/>
-			<item value="C:\Users\david\Desktop\Generation Brasil\Repositorios Generation\turma19java\Bloco II\Aulas SpringBoot\Listas de Exercicios SpringBoot\Lista01\habilidades-mentalidades"/>
+			<item value="C:\Users\david\Desktop\Generation Brasil\Repositorios Generation\turma19java\Bloco II\Aulas SpringBoot\Listas de Exercicios SpringBoot\Lista01\Atividade2"/>
+			<item value="C:\Users\david\Desktop\Generation Brasil\Repositorios Generation\turma19java\Bloco II\Aulas SpringBoot\Listas de Exercicios SpringBoot\Lista01\Atividade1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -13,9 +13,5 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
-	</section>
-	<section name="org.eclipse.m2e.core.pom.overview">
-	</section>
-	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
