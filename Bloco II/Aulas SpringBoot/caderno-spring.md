@@ -69,15 +69,14 @@
 - **@RequestMapping*("uri")*** (Informar por qual uri essa classe será acessada)
 - **@CrossOrigin("*")** (Para a classe aceitar requisições de qualquer origem. Ex.: Angular, REACT e etc)
 - **@Autowired** (Serve para instanciar interfaces / ajuda a fazer o acesso a uma inteface)
-
 - **@GetMapping** (Acionado quando a requisição é somente a da classe)
 - **@GetMapping*("/{id}")*** (Get que recebe uma variavel no caminho como parametro)
   - **@PathVariable** (Pega a viriavel do caminho da *URI* do GetMapping)
 - **.map() / .orElse()** (Serve para dar uma condição igual ***if*** e ***else***)
-
-
-
-
+- **@PostMapping** (Informa que sera um Post que pegara uma info parecido com o Insert Into do Banco de Dados)
+  - **@RequestBody** (Pega a informação que esta no corpo(Body) da requisição feita no post para ser utilizada)
+- **@PutMapping** (Para atualizar UPDATE)
+- **@DeleteMapping*("/{id}")*** (Deleta um dado do banco orientado pela requisição)
 
 # AJUDA EXTRA
 

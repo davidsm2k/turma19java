@@ -1,0 +1,16 @@
+package com.turma19.cadastro.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_pessoa")
+public class Pessoa {
+	
+	private long id;
+	
+	private String nome;
+	
+	private int idade;
+	
+}

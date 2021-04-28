@@ -1,0 +1,5 @@
+package com.turma19.cadastro.model;
+
+public class Pessoa {
+
+}

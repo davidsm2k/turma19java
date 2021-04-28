@@ -1,0 +1,9 @@
+package com.turma19.cadastro.repository;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Repository
+public class CadastroRepository extends JpaRepository<Pessoa, Long id>{
+	
+}
