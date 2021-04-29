@@ -79,9 +79,10 @@
 - **@DeleteMapping*("/{id}")*** (Deleta um dado do banco orientado pela requisição)
 - **@OneToOne** (Relacionamento um para um) - ***1 para 1*** - 
 - **@OneToMany** (Relacionamento um para muitos) - ***1 para N*** -
-  - **@OneToMany*()***
+  - **@OneToMany*(mappedBy = "tema", cascade = CascadeType.ALL)*** (Serve para alterar tudo ao que esta relacionado)
 - **@ManyToOne** (Relacionamento muitos para um) - ***N para 1*** -
 - **@ManyToMany** (Relacionamento muitos para muitos) - ***N para N*** -
+- **@JsonIgnoreProperties*(<nome-da-propriedade>)*** (Ignora a propriedade para quebrar o looping de puxar os dados infinitamente)
 
 
 
