@@ -24,13 +24,13 @@
 
 <h4><center>CAMADAS:</center></h4>
 
-**Repository** *->* Comunica com banco de dados
+**Model / Entity** *->* classe responsável pela abstração de nossos objetos e tabelas em nossos banco de dados.
 
-**Model** *->* Modelos 
+**Repository / DAO** *->* Interface responsável pena comunicação direta com o banco de dados.
 
-**Controller** *->* 
+**Controller** *->* “End point”, é a camada responsável por manipular todas as requisições feitas do lado de fora da nossa API, essas requisições são feitas atravésde URL’s seguindo o protocolo HTTP
 
-**Service** *->*
+**Service** *->* Classe responsável por toda regra de negocio e trata
 
 
 
@@ -77,10 +77,15 @@
   - **@RequestBody** (Pega a informação que esta no corpo(Body) da requisição feita no post para ser utilizada)
 - **@PutMapping** (Para atualizar UPDATE)
 - **@DeleteMapping*("/{id}")*** (Deleta um dado do banco orientado pela requisição)
+- **@OneToOne** (Relacionamento um para um) - ***1 para 1*** - 
+- **@OneToMany** (Relacionamento um para muitos) - ***1 para N*** -
+  - **@OneToMany*()***
+- **@ManyToOne** (Relacionamento muitos para um) - ***N para 1*** -
+- **@ManyToMany** (Relacionamento muitos para muitos) - ***N para N*** -
+
+
 
 # AJUDA EXTRA
-
-
 
 #### application.properties
 
