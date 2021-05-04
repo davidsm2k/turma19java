@@ -1,0 +1,18 @@
+package com.generation.EscolaGeneration.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.generation.EscolaGeneration.repository.TurmaRepository;
+
+@RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+@RequestMapping("/turma")
+public class TurmaController {
+
+	@Autowired
+	private TurmaRepository repository;
+	
+}

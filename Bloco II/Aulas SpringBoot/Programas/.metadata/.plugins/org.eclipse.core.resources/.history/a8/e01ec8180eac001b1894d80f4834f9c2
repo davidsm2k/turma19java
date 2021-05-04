@@ -1,0 +1,10 @@
+package com.generation.EscolaGeneration.model;
+
+public class Estudante {
+	
+	private long id;
+	
+	private String nome;
+	
+	private Turma turma;
+}

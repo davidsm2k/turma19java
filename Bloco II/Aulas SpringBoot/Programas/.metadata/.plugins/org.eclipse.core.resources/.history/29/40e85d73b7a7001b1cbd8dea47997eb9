@@ -1,8 +1,0 @@
-package com.turma19.cadastro.repository;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public class CadastroRepository {
-	
-}

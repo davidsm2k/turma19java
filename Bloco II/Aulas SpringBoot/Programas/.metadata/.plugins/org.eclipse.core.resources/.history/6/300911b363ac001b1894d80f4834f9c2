@@ -1,0 +1,10 @@
+package br.com.generation_turma_19.farmacia.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_categoria")
+public class Categoria {
+	private long id;
+}

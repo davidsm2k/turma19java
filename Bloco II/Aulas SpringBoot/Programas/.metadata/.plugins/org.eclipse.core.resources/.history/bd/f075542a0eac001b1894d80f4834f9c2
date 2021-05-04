@@ -1,0 +1,13 @@
+package com.generation.EscolaGeneration.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Estudante {
+	
+	private long id;
+	
+	private String nome;
+	
+	private Turma turma;
+}
