@@ -10617,3 +10617,27 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:04:34.530
 !MESSAGE executing callback sts4.classpath.oqIJcLSP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:02.521
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:02.523
+!MESSAGE buffering callback sts4.classpath.oqIJcLSP minhaLojaDeGames true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:02.524
+!MESSAGE executing callback sts4.classpath.oqIJcLSP 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:02.543
+!MESSAGE executing callback sts4.classpath.oqIJcLSP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:45.609
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oqIJcLSP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:45.610
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oqIJcLSP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:45.610
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 19:09:45.611
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oqIJcLSP => OK
