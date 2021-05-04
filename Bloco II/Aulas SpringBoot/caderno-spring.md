@@ -40,17 +40,17 @@
 
 - **@Entity** (Informar que é uma entidade)
 
-- **@Table*(name = <nome-da-tababela>)*** (Define nome da tabela que sera criada no BANCO)
+- **@Table*(name = *nome-da-tabela*)*** (Define nome da tabela que sera criada no BANCO)
 
 - **@Id** (Informa que  variavel é um ID no banco)
   - **@GeneratedValue*(strategy = GenerationType.IDENTITY)*** (Transforma o Id em Chave Primaria)
 - **@NotNull** (Não pode ficar vazio)
 - **@Size*(min = 5, max = 100)*** (Define o minino e o maximo de caracteres)
-- **@Temporal(TemporalType.TIMESTAMP)** (Informa que é um tempo e o tipo de tempo)
+- **@Temporal(TemporalType.TIMESTAMP)** (Informa que é um tempo e o tipo de tempo neste caso pegando o tempo atual)
 
 
 
-#### Repository:
+#### Repository:@
 
 - **@Repository**(Informar que é um Repositorio)
 
@@ -67,7 +67,7 @@
 
 - **@RestController** (Informar que é um controller)
 - **@RequestMapping*("uri")*** (Informar por qual uri essa classe será acessada)
-- **@CrossOrigin("*")** (Para a classe aceitar requisições de qualquer origem. Ex.: Angular, REACT e etc)
+- **@CrossOrigin(origins = "\*", allowedHeaders = "\*")** (Para a classe aceitar requisições de qualquer origem. Ex.: Angular, REACT e etc)
 - **@Autowired** (Serve para instanciar interfaces / ajuda a fazer o acesso a uma inteface)
 - **@GetMapping** (Acionado quando a requisição é somente a da classe)
 - **@GetMapping*("/{id}")*** (Get que recebe uma variavel no caminho como parametro)
@@ -82,7 +82,7 @@
   - **@OneToMany*(mappedBy = "tema", cascade = CascadeType.ALL)*** (Serve para alterar tudo ao que esta relacionado)
 - **@ManyToOne** (Relacionamento muitos para um) - ***N para 1*** -
 - **@ManyToMany** (Relacionamento muitos para muitos) - ***N para N*** -
-- **@JsonIgnoreProperties*(<nome-da-propriedade>)*** (Ignora a propriedade para quebrar o looping de puxar os dados infinitamente)
+- **@JsonIgnoreProperties*(*nome-da-propriedade*)*** (Ignora a propriedade para quebrar o looping de puxar os dados infinitamente)
 
 
 
@@ -95,5 +95,3 @@
   spring.datasource.username=root
   spring.datasource.password=senhadobanco
   spring.jpa.show-sql=true*
-
-d
