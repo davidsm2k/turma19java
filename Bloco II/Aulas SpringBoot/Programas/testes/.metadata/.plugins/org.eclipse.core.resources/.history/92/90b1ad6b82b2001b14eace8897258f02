@@ -1,0 +1,5 @@
+package com.generation.junit2.contato;
+
+public class ContatosRepositoryIntegrationTest {
+
+}

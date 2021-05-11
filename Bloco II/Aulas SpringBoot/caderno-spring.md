@@ -86,6 +86,16 @@
 
 
 
+#### Security:
+
+- **@EnableWebSecurity **(informa q se trada de uma classe de Configuração de segurança do spring)
+- **extends** ***WebSecurityConfigurerAdapter*** (puxa as configurações de segurança)
+- **@Override** (Para informar que é uma subescriva de metodo)
+
+#### Service:
+
+- @Service (Informar que é um serviço )
+
 # AJUDA EXTRA
 
 #### application.properties
