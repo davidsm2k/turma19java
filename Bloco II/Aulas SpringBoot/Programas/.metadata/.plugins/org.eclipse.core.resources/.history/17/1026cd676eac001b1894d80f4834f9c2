@@ -1,8 +1,0 @@
-package br.com.generation_turma_19.farmacia.controller;
-
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class CategoriaController {
-	
-}

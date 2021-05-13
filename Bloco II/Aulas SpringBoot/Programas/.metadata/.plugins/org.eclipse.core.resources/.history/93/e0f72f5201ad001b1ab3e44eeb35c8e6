@@ -1,5 +1,0 @@
-package br.com.generation_turma_19.minhaLojaDeGames.repository;
-
-public interface CategoriaRepository {
-
-}

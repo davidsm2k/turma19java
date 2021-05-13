@@ -1,8 +1,0 @@
-package com.generation.EscolaGeneration.model;
-
-import javax.persistence.Entity;
-
-@Entity
-public class Turma {
-	
-}

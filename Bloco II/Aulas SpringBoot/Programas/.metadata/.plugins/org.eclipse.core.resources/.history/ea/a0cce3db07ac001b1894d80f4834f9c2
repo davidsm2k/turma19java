@@ -1,5 +1,0 @@
-package com.generation.EscolaGeneration.repository;
-
-public interface TurmaRepository {
-	
-}
