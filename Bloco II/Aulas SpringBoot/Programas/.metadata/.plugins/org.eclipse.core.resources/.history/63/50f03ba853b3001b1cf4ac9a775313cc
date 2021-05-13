@@ -1,0 +1,9 @@
+package com.generation.junit3.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.generation.junit3.model.ContatoModel;
+
+public interface ContatoRepository extends JpaRepository<ContatoModel, Long> {
+
+}
