@@ -1,7 +1,0 @@
-package ExerciciosLista7;
-
-public class TesteCliente {
-	public static void main(String[] args) {
-		Scanner leia = new Scanner(System.in);
-	}
-}

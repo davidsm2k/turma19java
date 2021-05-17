@@ -1,5 +1,0 @@
-package com.generation.junit4.repository;
-
-public interface ContatoRepository {
-
-}

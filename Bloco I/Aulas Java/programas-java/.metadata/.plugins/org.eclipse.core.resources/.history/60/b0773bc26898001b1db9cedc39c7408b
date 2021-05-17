@@ -1,8 +1,0 @@
-package entity;
-
-public class Produto {
-	private int id;
-	private String descricao;
-	private double valorunitario;
-	private int qtdeEstoque;
-}

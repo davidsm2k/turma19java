@@ -1,7 +1,0 @@
-package application;
-
-public class TesteDev {
-	public static void main(String[] args) {
-		
-	}
-}

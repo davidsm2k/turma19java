@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+C:\Users\david\Desktop\Generation Brasil\Repositorios Generation\turma19java\Bloco II\Aulas SpringBoot\Listas de Exercicios SpringBoot\Lista01\.metadata\.plugins\org.eclipse.jdt.core

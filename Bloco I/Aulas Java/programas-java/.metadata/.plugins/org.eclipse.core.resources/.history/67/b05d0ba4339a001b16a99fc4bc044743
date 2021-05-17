@@ -1,7 +1,0 @@
-package entity;
-
-public class Mochila extends Produto{
-	private String marca;
-	
-	
-}
